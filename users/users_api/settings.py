@@ -1,6 +1,9 @@
 from pathlib import Path
 from datetime import timedelta
+import pymysql 
 
+pymysql.version_info = (1, 4, 6, 'final', 0)
+pymysql.install_as_MySQLdb()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -13,7 +16,7 @@ SECRET_KEY = 'django-insecure--lo%#^ae&pvn6@&=_j2!q!fuefj)&g+fq0l#t7whnp60#m9#-i
 # SECURITY WARNING: don't run with debug turned on in projection!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -120,10 +123,10 @@ CORS_ORIGIN_WHITELIST = ["http://localhost:4200"]
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'db_portafolio',
-        'USER': 'root',
+        'NAME': '',
+        'USER': '',
         'PASSWORD': '',
-        'HOST': 'localhost',  # Puedes cambiar esto según tu configuración
+        'HOST': '',  # Puedes cambiar esto según tu configuración
         'PORT': '3306',  # Puedes cambiar esto según tu configuración
     }
 }

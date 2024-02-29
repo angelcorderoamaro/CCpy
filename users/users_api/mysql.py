@@ -2,10 +2,10 @@ import mysql.connector
 
 # Configuración de conexión a la base de datos
 config = {
-    'user': 'root',
-    'password': 'Unico123',
-    'host': 'localhost',  # Puedes cambiar esto según tu configuración
-    'database': 'db-portafolio',
+    'user': '',
+    'password': '',
+    'host': '',  # Puedes cambiar esto según tu configuración
+    'database': '',
     'raise_on_warnings': True,
 }
 
